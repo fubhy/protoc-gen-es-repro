@@ -7,7 +7,6 @@
 
 # Ignore various outputs
 dist/
-generated/
 *.tsbuildinfo
 
 # Ignore dependencies
