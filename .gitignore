@@ -1,0 +1,14 @@
+# Ignore all dotfiles except the whitelisted ones
+.*
+!.gitignore
+
+# Ignore log output
+*.log
+
+# Ignore various outputs
+dist/
+generated/
+*.tsbuildinfo
+
+# Ignore dependencies
+node_modules/

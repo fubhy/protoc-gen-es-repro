@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "files": [
+    "dist/**"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "scripts": {
+    "codegen": "buf generate buf.build/streamingfast/substreams:develop",
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.0.0"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.14.0",
+    "@bufbuild/protoc-gen-es": "^1.0.0"
+  }
+}
